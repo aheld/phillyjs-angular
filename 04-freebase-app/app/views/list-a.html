@@ -6,5 +6,14 @@
 		<li class="mid">{{item.mid}}</li>
 		<li class="name">{{item.name}}</li>
 		<li class="notable">{{item.notable.name}}</li>
+    <li><button ng-hide="item.details" class="btn btn-small" ng-click="ShowDetails(item)">Show</button>
+    <button ng-show="item.details" class="btn btn-small" ng-click="HideDetails(item)">Hide</button>
+      <ul>
+          <li>{{item.details.data.property["/common/topic/description"].values[0].text | json}}</li>
+        </ul>
+     </li>   
+
+
+
 	</ul>
 </div>
