@@ -1,0 +1,10 @@
+<div ng-hide="req.data">LOADING...</div>
+
+<div ng-repeat="item in req.data.result">
+	<ul class="results">
+		<li class="id"><A href="#/item{{item.id | encodeid}}">{{item.id}}</A></li>
+		<li class="mid">{{item.mid}}</li>
+		<li class="name">{{item.name}}</li>
+		<li class="notable">{{item.notable.name}}</li>
+	</ul>
+</div>

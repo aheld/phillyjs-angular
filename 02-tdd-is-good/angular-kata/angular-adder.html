@@ -1,0 +1,33 @@
+    <!doctype html>
+    <html ng-app>
+    <head>
+    <script src="/libs/angular.js"></script>
+    <script src="src/Calculator.js"></script>
+    <script src="src/Controllers.js"></script>
+    <!--script>
+    function addCtrl($scope){
+        $scope.sum = "Unknown, because you have not entered anything!";
+        $scope.add = function(){
+            $scope.sum = Add($scope.numbers);
+        }
+
+        $scope.$watch("numbers", function(newNum){
+           if (!newNum) newNum = "";
+           var tmp = returnDelimAndNumbers(newNum);
+           $scope.sum =  AddSimple(tmp.numbers,tmp.delimeter);
+        });
+
+       
+    }
+    </script-->
+    </head>
+    <body ng-controller="addCtrl">
+    <div>
+    <label>Input:</label>
+    <textarea type="text" ng-model="numbers" placeholder="Enter an input here"></textarea>
+    <hr>
+    Sum: <em>{{sum}}!</em>
+    <button ng-click="add()" ng-show="numbers"> press me</button>
+    <button ng-click="add2()" ng-show="numbers"> No! press me</button>
+    </div>
+    </body>

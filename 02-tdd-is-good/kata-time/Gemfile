@@ -1,0 +1,5 @@
+
+gem 'guard'
+gem 'guard-livereload'
+#gem 'jasmine'
+#gem 'win32console'

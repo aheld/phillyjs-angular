@@ -1,0 +1,26 @@
+    <!doctype html>
+    <html ng-app>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script>
+    /* 
+    ADDED CONTROLLER 
+    This is nothing more than a plain javascript function that takes 'scope' as an argument
+    */
+    function controlThisPage($scope){
+        console.log("I am under control");
+        $scope.greeting = "Hello"
+        $scope.alertuser = function(){$scope.message = "Alert: " + $scope.yourName + " is here";}
+    }
+    </script>
+    </head>
+    <body ng-controller="controlThisPage">
+    <div>
+    <label>Name:</label>
+    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+    <hr>
+    <h1>{{greeting}} {{yourName}}!</h1>
+    <button ng-click="alertuser()" ng-show="yourName"> press me</button> {{message}}
+    </div>
+    </body>
+    </html>

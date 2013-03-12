@@ -1,0 +1,9 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+ul.results li {display:inline;}
+ul.results li.id {width:50%; background-color: #ccc}
+ul.results li.name {font-weight: bold}
+ul.results li.notable {text-decoration: underline;}
+
+div.heading {text-align: center}
+#main {padding-top:50px;}

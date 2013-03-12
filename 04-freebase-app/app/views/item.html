@@ -1,0 +1,11 @@
+<ul>
+	<li ng-repeat="(key, value) in req.data.property">
+		{{key}} Type={{value.valuetype}}
+		<ul><li ng-hide="$index > 2" ng-repeat="row in value.values">{{$index + 1}}] {{row.text}}  
+		</li>
+		<li ng-show="$index == 3">morelink....</li> 
+		</ul>
+	</li>
+</ul>
+{{req.data | json}}
+</pre>
