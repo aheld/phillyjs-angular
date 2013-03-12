@@ -1,6 +1,6 @@
 'use strict';
 
-var FreebaseAppApp = angular.module('FreebaseAppApp', ['FreeBaseFilters'])
+var FreebaseAppApp = angular.module('FreebaseAppApp', ['FreeBaseFilters','ui.bootstrap'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
@@ -9,6 +9,10 @@ var FreebaseAppApp = angular.module('FreebaseAppApp', ['FreeBaseFilters'])
       })
       .when('/list/:query', {
         templateUrl: 'views/list.html',
+        controller: 'ListCtrl'
+      })
+      .when('/list-a/:query', {
+        templateUrl: 'views/list-a.html',
         controller: 'ListCtrl'
       })
       .when('/item/:prefix/:id', {
