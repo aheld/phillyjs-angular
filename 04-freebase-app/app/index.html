@@ -11,6 +11,11 @@
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="styles/main.css"/>
         <link rel="stylesheet" href="styles/bootstrap.css"/>
+        <link rel="stylesheet" href="styles/angular-leaflet-directive.css"/>
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+         <!--[if lte IE 8]>
+             <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+         <![endif]-->
 
     </head>
     <body ng-app="FreebaseAppApp" class="container">
@@ -39,13 +44,17 @@
 
         <script src="scripts/vendor/angular.js"></script>
         <script src="scripts/vendor/ui-bootstrap-tpls-0.2.0.js"></script>
-        
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+
         <!-- build:js scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/list.js"></script>
         <script src="scripts/services/freebase.js"></script>
         <script src="scripts/filters/filters.js"></script>
+
+        <script src="scripts/vendor/angular-leaflet-directive.js"></script>
+
         <!-- endbuild -->
 
 
