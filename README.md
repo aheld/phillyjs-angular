@@ -3,6 +3,7 @@ phillyjs-angular
 
 code for basic intro talk on Angularjs.  
 These examples are hosted at http://angular.isourthing.com/
+
 Three slide intro at https://docs.google.com/presentation/d/12pdVjoonpo2QjHg3FMrs0I5igTFV8DqMGCMqfxsaZa4/edit?usp=sharing
 
 Notes to talk about:
