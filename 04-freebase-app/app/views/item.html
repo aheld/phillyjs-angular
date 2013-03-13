@@ -1,13 +1,28 @@
-{{req.data.property['/location/location/geolocation'].values[0].property['/location/geocode/latitude']}}
 
 <ul>
 	<li ng-repeat="(key, value) in req.data.property">
 		{{key}} Type={{value.valuetype}}
-		<ul><li ng-hide="$index > 2" ng-repeat="row in value.values">{{$index + 1}}] {{row.text}}  
-		</li>
-		<li ng-show="$index == 3">morelink....</li> 
-		</ul>
+			<ul>
+				<li ng-hide="$index > 4" ng-repeat="row in value.values">{{$index }}] {{row.text}}
+					<div ng-show="$index == 4"><em>morelink....</em></div> 
+				</li>				
+			</ul>
+			
 	</li>
 </ul>
+
+
+
+
+
+
+
+
+
+<div ng-show="showMap">
+<leaflet marker="marker" center="center" zoom="zoom" draggable="true" message="message"></leaflet>
+Zoom: <input ng-model="zoom">
+</div>
+<!--pre>
 {{req.data | json}}
-</pre>
+</pre-->

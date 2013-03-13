@@ -1,6 +1,6 @@
 'use strict';
 
-var FreebaseAppApp = angular.module('FreebaseAppApp', ['FreeBaseFilters','ui.bootstrap'])
+var FreebaseAppApp = angular.module('FreebaseAppApp', ['FreeBaseFilters','ui.bootstrap','leaflet-directive'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
