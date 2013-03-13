@@ -10,11 +10,8 @@ function AddSimple(numbers,delimeter) {
 }
 
 function Add(numbers){
-	console.log("Called with [" + numbers + "]")
 	var tmp = returnDelimAndNumbers(numbers);
-	var x=  AddSimple(tmp.numbers,tmp.delimeter);
-	console.log("Returning [" + x + "]")
-	return x;
+	return AddSimple(tmp.numbers,tmp.delimeter);
 }
 
 function returnDelimAndNumbers(numbers){

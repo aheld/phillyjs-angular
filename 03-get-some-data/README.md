@@ -14,3 +14,5 @@ Load a hardcoded result set on page load
 
 ### freebase-interactive
 Load a results based on an input box and load the result set whenever the input changes.  This will demonstrate how to watch a variable for change, and how to test code that relies on watching.
+
+Also a good place to play with filters

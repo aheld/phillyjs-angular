@@ -7,7 +7,7 @@ function mainCtrl($scope, $http){
        $http({method: 'JSONP', url: $scope.search_url + $scope.query}).
           success(function(data, status, headers, config) {
             $scope.data = data;
-        })
+        });
   });
-  $scope.query = "Philadelphia"
+  $scope.query = "Philadelphia";
 }

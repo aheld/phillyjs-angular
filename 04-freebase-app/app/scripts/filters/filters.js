@@ -1,6 +1,6 @@
 angular.module('FreeBaseFilters', []).
-  filter('encodeid', function() {
+  filter('illify', function() {
     return function(input) {
-    	return encodeURI(input);
+    	return input.replace('Philadelphia','Illadelphia');
     }
   });

@@ -11,7 +11,7 @@
 <input ng-model="query"><br/>Filter:<input ng-model="subquery">
     <ul>
         <li ng-repeat="item in data.result | filter:subquery">
-            {{item.name}} <em>{{item.notable.name}}</em>
+            {{item.name}} [{{item.mid}}]<em>{{item.notable.name}}</em>
         </li>
     </ul>
 <pre ng-hide="subquery">
