@@ -1,7 +1,7 @@
 phillyjs-angular
 ================
 
-code for basic intro talk on Angularjs
+code for basic intro talk on Angularjs.  Hosted at http://angular.isourthing.com/
 
 Notes to talk about:
 
